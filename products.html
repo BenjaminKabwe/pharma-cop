@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCop - Produits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="logo" href="index.html">Pharma<span>Cop</span></a>
+        <button class="menu-button" id="menuButton">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="products.html">Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-tag">Notre catalogue</span>
+          <h1>Nos Produits</h1>
+          <p class="hero-sub">Des produits de qualité sélectionnés par nos pharmaciens pour votre santé au quotidien.</p>
+        </div>
+      </section>
+
+      <!-- ===== GRILLE PRODUITS ===== -->
+      <section class="section">
+        <div class="container">
+
+          <!-- Onglets filtre -->
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">Tous les produits</button>
+            <button class="filter-tab" data-filter="medicament">Médicaments</button>
+            <button class="filter-tab" data-filter="complement">Compléments</button>
+          </div>
+
+          <div class="product-cards-grid">
+
+            <!-- Paracétamol -->
+            <article class="product-card" data-category="medicament" onclick="openModal('paracetamol')">
+              <div class="product-img-wrap prd-blue">
+                <span class="prd-emoji">💊</span>
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" alt="Paracétamol" onerror="this.style.display='none'" />
+                <span class="product-badge-img">Médicament</span>
+              </div>
+              <div class="product-body">
+                <h3>Paracétamol 500mg</h3>
+                <p>Antalgique et antipyrétique couramment utilisé pour soulager les douleurs légères et réduire la fièvre.</p>
+                <div class="product-meta">
+                  <span class="product-tag">Sans ordonnance</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Ibuprofène -->
+            <article class="product-card" data-category="medicament" onclick="openModal('ibuprofen')">
+              <div class="product-img-wrap prd-orange">
+                <span class="prd-emoji">🔴</span>
+                <img src="img/ibuprofen.jpg" alt="Ibuprofène" onerror="this.style.display='none'" />
+                <span class="product-badge-img">Médicament</span>
+              </div>
+              <div class="product-body">
+                <h3>Ibuprofène 400mg</h3>
+                <p>Anti-inflammatoire non stéroïdien pour lutter contre la douleur, l'inflammation et la fièvre.</p>
+                <div class="product-meta">
+                  <span class="product-tag orange">Avec précaution</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Vitamines -->
+            <article class="product-card" data-category="complement" onclick="openModal('vitamines')">
+              <div class="product-img-wrap prd-green">
+                <span class="prd-emoji">🍊</span>
+                <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=600&q=80" alt="Vitamines C & D" onerror="this.style.display='none'" />
+                <span class="product-badge-img green">Complément</span>
+              </div>
+              <div class="product-body">
+                <h3>Vitamines C & D</h3>
+                <p>Complexe vitaminé pour renforcer les défenses immunitaires et soutenir la vitalité en toute saison.</p>
+                <div class="product-meta">
+                  <span class="product-tag">Usage quotidien</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Antiacide -->
+            <article class="product-card" data-category="medicament" onclick="openModal('antiacide')">
+              <div class="product-img-wrap prd-purple">
+                <span class="prd-emoji">🫧</span>
+                <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=600&q=80" alt="Antiacide" onerror="this.style.display='none'" />
+                <span class="product-badge-img">Médicament</span>
+              </div>
+              <div class="product-body">
+                <h3>Antiacide Rapide</h3>
+                <p>Soulagement rapide des brûlures d'estomac, remontées acides et inconfort digestif après les repas.</p>
+                <div class="product-meta">
+                  <span class="product-tag">Action rapide</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sirop -->
+            <article class="product-card" data-category="medicament" onclick="openModal('sirop')">
+              <div class="product-img-wrap prd-pink">
+                <span class="prd-emoji">🍓</span>
+                <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=600&q=80" alt="Sirop pédiatrique" onerror="this.style.display='none'" />
+                <span class="product-badge-img">Médicament</span>
+              </div>
+              <div class="product-body">
+                <h3>Sirop Pédiatrique</h3>
+                <p>Sirop doux sans alcool pour soulager la toux des enfants. Formule naturelle au goût fruité agréable.</p>
+                <div class="product-meta">
+                  <span class="product-tag">Dès 2 ans</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Magnésium -->
+            <article class="product-card" data-category="complement" onclick="openModal('magnesium')">
+              <div class="product-img-wrap prd-teal">
+                <span class="prd-emoji">🌊</span>
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Magnésium Marin" onerror="this.style.display='none'" />
+                <span class="product-badge-img green">Complément</span>
+              </div>
+              <div class="product-body">
+                <h3>Magnésium Marin</h3>
+                <p>Extrait naturellement de l'eau de mer. Réduit la fatigue, soutient les muscles et le système nerveux.</p>
+                <div class="product-meta">
+                  <span class="product-tag">Origine naturelle</span>
+                  <span class="btn btn-primary btn-sm">Détails</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MODAL PRODUIT ===== -->
+      <div id="productModal" class="modal-overlay">
+        <div class="modal-box">
+          <div class="modal-top">
+            <img id="modalImg" class="modal-img" src="" alt="" />
+            <button class="modal-close" onclick="closeModal()">✕</button>
+          </div>
+          <div class="modal-body">
+            <span id="modalBadge" class="modal-badge"></span>
+            <h2 id="modalTitre"></h2>
+            <p id="modalDesc" class="modal-desc"></p>
+            <ul id="modalInfos" class="modal-info-list"></ul>
+            <button class="btn btn-primary" style="width:100%" onclick="closeModal()">Fermer</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 PharmaCop - Tous droits reserves.</div>
+    </footer>
+
+    <!-- Chatbot flottant -->
+    <div id="chatbot">
+      <div id="chatBox" class="chat-box">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <span class="chat-avatar">💊</span>
+            <div>
+              <span class="chat-title">Assistant PharmaCop</span>
+              <span class="chat-status">● En ligne</span>
+            </div>
+          </div>
+          <button id="chatClose" class="chat-header-close" aria-label="Fermer">✕</button>
+        </div>
+        <div class="chat-disclaimer">⚠️ Je suis une aide informative uniquement — je ne remplace pas un médecin.</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="Écrivez ou choisissez un symptôme..." />
+          <button id="chatSend" aria-label="Envoyer">➤</button>
+        </div>
+      </div>
+      <button id="chatToggle" aria-label="Ouvrir le chat">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

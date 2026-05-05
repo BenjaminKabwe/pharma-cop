@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCop - Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="logo" href="index.html">Pharma<span>Cop</span></a>
+        <button class="menu-button" id="menuButton">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-tag">Ce que nous faisons</span>
+          <h1>Nos Services</h1>
+          <p class="hero-sub">Un accompagnement professionnel et bienveillant pour chaque étape de votre parcours santé.</p>
+        </div>
+      </section>
+
+      <!-- ===== ÉTAPES ===== -->
+      <section class="section steps-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Comment ça marche</span>
+            <h2 class="section-title">Simple et efficace</h2>
+            <p class="section-subtitle">Trois étapes pour vous accompagner au mieux</p>
+          </div>
+          <div class="steps-grid">
+            <div class="step-item">
+              <div class="step-number">01</div>
+              <h3>Vous consultez</h3>
+              <p>Posez votre question en ligne via le chatbot ou venez directement à la pharmacie.</p>
+            </div>
+            <div class="step-item">
+              <div class="step-number">02</div>
+              <h3>On analyse</h3>
+              <p>Nos pharmaciens étudient votre besoin et identifient la meilleure solution.</p>
+            </div>
+            <div class="step-item">
+              <div class="step-number">03</div>
+              <h3>Vous êtes guidé</h3>
+              <p>Vous repartez avec des conseils clairs, des recommandations et un suivi si nécessaire.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CARTES SERVICES ===== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Nos expertises</span>
+            <h2 class="section-title">Un accompagnement complet</h2>
+            <p class="section-subtitle">Des services pensés pour votre bien-être au quotidien</p>
+          </div>
+          <div class="services-grid">
+
+            <article class="service-card">
+              <span class="service-icon-wrap">🩺</span>
+              <h3>Conseils pharmaceutiques</h3>
+              <p>Des recommandations claires et personnalisées sur l'utilisation correcte de vos traitements et médicaments.</p>
+              <ul class="service-list">
+                <li>Posologie et durée de traitement</li>
+                <li>Interactions médicamenteuses</li>
+                <li>Contre-indications</li>
+                <li>Alternatives naturelles</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span class="service-icon-wrap">💊</span>
+              <h3>Orientation médicaments</h3>
+              <p>Aide pour comprendre les indications, les doses et les précautions à prendre avec vos prescriptions.</p>
+              <ul class="service-list">
+                <li>Lecture d'ordonnances</li>
+                <li>Explication des notices</li>
+                <li>Adaptation des doses</li>
+                <li>Suivi de traitement</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <span class="service-icon-wrap">🌿</span>
+              <h3>Prévention & bien-être</h3>
+              <p>Conseils de prévention et accompagnement pour adopter de bonnes habitudes de vie durables.</p>
+              <ul class="service-list">
+                <li>Nutrition et compléments</li>
+                <li>Gestion du stress</li>
+                <li>Hygiène de vie</li>
+                <li>Bilans de santé</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 PharmaCop - Tous droits reserves.</div>
+    </footer>
+
+    <!-- Chatbot flottant -->
+    <div id="chatbot">
+      <div id="chatBox" class="chat-box">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <span class="chat-avatar">💊</span>
+            <div>
+              <span class="chat-title">Assistant PharmaCop</span>
+              <span class="chat-status">● En ligne</span>
+            </div>
+          </div>
+          <button id="chatClose" class="chat-header-close" aria-label="Fermer">✕</button>
+        </div>
+        <div class="chat-disclaimer">⚠️ Je suis une aide informative uniquement — je ne remplace pas un médecin.</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="Écrivez ou choisissez un symptôme..." />
+          <button id="chatSend" aria-label="Envoyer">➤</button>
+        </div>
+      </div>
+      <button id="chatToggle" aria-label="Ouvrir le chat">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

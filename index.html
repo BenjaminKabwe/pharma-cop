@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCop - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="logo" href="index.html">Pharma<span>Cop</span></a>
+        <button class="menu-button" id="menuButton">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="active" href="index.html">Accueil</a></li>
+          <li><a href="about.html">A propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <span class="hero-badge">💊 Votre pharmacie de confiance</span>
+          <h1>Votre santé,<br><span>notre priorité</span></h1>
+          <p>
+            Une pharmacie moderne et humaine pour vous accompagner
+            dans vos besoins quotidiens de santé avec expertise et bienveillance.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="contact.html">Nous contacter</a>
+            <a class="btn btn-outline-white" href="services.html">Nos services</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURES ===== -->
+      <section class="section features-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Pourquoi nous choisir</span>
+            <h2 class="section-title">Un accompagnement complet</h2>
+            <p class="section-subtitle">Des services pensés pour votre bien-être au quotidien</p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <span class="feature-icon">🩺</span>
+              <h3>Conseils d'experts</h3>
+              <p>Des pharmaciens qualifiés à votre écoute pour des conseils personnalisés et fiables.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">💊</span>
+              <h3>Large gamme</h3>
+              <p>Médicaments, compléments, parapharmacie — tout ce dont vous avez besoin.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">⚡</span>
+              <h3>Service rapide</h3>
+              <p>Préparation de commandes efficace pour vous faire gagner un temps précieux.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🔒</span>
+              <h3>Confidentialité</h3>
+              <p>Vos données et votre santé sont traitées avec la plus grande discrétion.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STATS ===== -->
+      <section class="stats-section">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Patients accompagnés</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Produits disponibles</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5 ans</span>
+            <span class="stat-label">D'expérience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfaction client</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="section cta-section">
+        <div class="container cta-content">
+          <h2>Prêt à prendre soin de votre santé ?</h2>
+          <p>Explorez nos produits et services ou contactez-nous directement.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">Voir nos produits</a>
+            <a class="btn btn-secondary" href="contact.html">Prendre rendez-vous</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 PharmaCop - Tous droits reserves.</div>
+    </footer>
+
+    <!-- Chatbot flottant -->
+    <div id="chatbot">
+      <div id="chatBox" class="chat-box">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <span class="chat-avatar">💊</span>
+            <div>
+              <span class="chat-title">Assistant PharmaCop</span>
+              <span class="chat-status">● En ligne</span>
+            </div>
+          </div>
+          <button id="chatClose" class="chat-header-close" aria-label="Fermer">✕</button>
+        </div>
+        <div class="chat-disclaimer">⚠️ Je suis une aide informative uniquement — je ne remplace pas un médecin.</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="Écrivez ou choisissez un symptôme..." />
+          <button id="chatSend" aria-label="Envoyer">➤</button>
+        </div>
+      </div>
+      <button id="chatToggle" aria-label="Ouvrir le chat">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

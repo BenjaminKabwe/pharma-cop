@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaCop - A propos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="logo" href="index.html">Pharma<span>Cop</span></a>
+        <button class="menu-button" id="menuButton">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a class="active" href="about.html">A propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-tag">Notre histoire</span>
+          <h1>À propos</h1>
+          <p class="hero-sub">Un étudiant passionné par la santé, la prévention et l'accès aux informations pharmaceutiques pour tous.</p>
+        </div>
+      </section>
+
+      <!-- ===== PROFIL ===== -->
+      <section class="section">
+        <div class="container about-layout">
+
+          <!-- Visuel -->
+          <div class="about-visual">
+            <div class="about-avatar-wrap">👨‍⚕️</div>
+            <div class="about-stats">
+              <div class="about-stat">
+                <strong>3 ans</strong>
+                <small>d'études</small>
+              </div>
+              <div class="about-stat">
+                <strong>200+</strong>
+                <small>produits connus</small>
+              </div>
+              <div class="about-stat">
+                <strong>100%</strong>
+                <small>passionné</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texte -->
+          <div class="about-text">
+            <span class="section-tag">Présentation</span>
+            <h2>Qui suis-je ?</h2>
+            <p>
+              Étudiant en pharmacie, je construis ce projet pour présenter une vision simple, claire et professionnelle de l'accompagnement en santé. Mon objectif : rendre les informations pharmaceutiques accessibles à tous.
+            </p>
+            <p>
+              Ce site est une démonstration d'une pharmacie moderne — fondée sur l'écoute, l'orientation et la simplicité. Chaque conseil ici est le reflet de ce que j'apprends au quotidien dans mes études.
+            </p>
+            <p>
+              Je crois qu'une bonne information de santé peut changer la vie d'une personne. C'est pourquoi j'ai créé PharmaCop : pour rapprocher les patients des bonnes réponses.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Pharmacologie</span>
+              <span class="skill-tag">Prévention</span>
+              <span class="skill-tag">Conseil patient</span>
+              <span class="skill-tag">Phytothérapie</span>
+              <span class="skill-tag">Nutrition</span>
+              <span class="skill-tag">Pédiatrie</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== VALEURS ===== -->
+      <section class="section values-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Ce qui nous guide</span>
+            <h2 class="section-title">Nos valeurs</h2>
+            <p class="section-subtitle">Les principes fondateurs de PharmaCop</p>
+          </div>
+          <div class="values-grid">
+            <div class="value-card">
+              <span>🎯</span>
+              <h3>Mission</h3>
+              <p>Rendre les informations pharmaceutiques accessibles, claires et fiables pour le grand public.</p>
+            </div>
+            <div class="value-card">
+              <span>👁️</span>
+              <h3>Vision</h3>
+              <p>Construire une pharmacie moderne où chaque patient se sent écouté, orienté et respecté.</p>
+            </div>
+            <div class="value-card">
+              <span>💙</span>
+              <h3>Engagement</h3>
+              <p>Offrir un accompagnement humain et bienveillant, centré sur le bien-être réel de chaque personne.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 PharmaCop - Tous droits reserves.</div>
+    </footer>
+
+    <!-- Chatbot flottant -->
+    <div id="chatbot">
+      <div id="chatBox" class="chat-box">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <span class="chat-avatar">💊</span>
+            <div>
+              <span class="chat-title">Assistant PharmaCop</span>
+              <span class="chat-status">● En ligne</span>
+            </div>
+          </div>
+          <button id="chatClose" class="chat-header-close" aria-label="Fermer">✕</button>
+        </div>
+        <div class="chat-disclaimer">⚠️ Je suis une aide informative uniquement — je ne remplace pas un médecin.</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <div class="chat-input-area">
+          <input type="text" id="chatInput" placeholder="Écrivez ou choisissez un symptôme..." />
+          <button id="chatSend" aria-label="Envoyer">➤</button>
+        </div>
+      </div>
+      <button id="chatToggle" aria-label="Ouvrir le chat">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
